@@ -2,6 +2,7 @@
 
 
 ##About
+
 Vagrant configuration with those components:
 * nodejs
 * mongodb
@@ -23,6 +24,6 @@ Vagrant configuration with those components:
 
 	coffee /vagrant/app.coffee
 
-###Now check that on your browser:
+###Now check that on your browser
 	
 	http://localhost:8080/
