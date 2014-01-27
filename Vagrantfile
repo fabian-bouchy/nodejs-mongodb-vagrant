@@ -29,9 +29,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "yum"
     chef.add_recipe "build-essential"
     chef.add_recipe "nodejs"
+    chef.add_recipe "mongodb::10gen_repo"
+    chef.add_recipe "mongodb"
+
   end
 
-  # Custom script to install Coffee-script 
+  # Custom script to install Coffee-script ...
   config.vm.provision :shell, :path => "bootstrap.sh"
 
 end
