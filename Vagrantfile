@@ -24,15 +24,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
 
+    chef.add_recipe "mongodb::10gen_repo"
     chef.add_recipe "apt"
     chef.add_recipe "python"
     chef.add_recipe "runit"
     chef.add_recipe "yum"
     chef.add_recipe "build-essential"
     chef.add_recipe "nodejs"
-    chef.add_recipe "mongodb::10gen_repo"
-    chef.add_recipe "mongodb"
-
+ 
   end
 
   # Custom script to install Coffee-script ...
