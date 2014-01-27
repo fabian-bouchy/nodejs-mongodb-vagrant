@@ -1,7 +1,7 @@
 # Skeleton for vagrant including nodejs and mongodb
 
 
-##About:
+##About
 Vagrant configuration with those components:
 * nodejs
 * mongodb
@@ -11,16 +11,18 @@ Vagrant configuration with those components:
 * mongoose
 
 
-##How to use:
+##How to use
 
-Init your machine
+###Init your machine
 
 	vagrant up
 
 	vagrant ssh
 
+###Start the nodejs application
+
 	coffee /vagrant/app.coffee
 
-Now on your browser check:
+###Now check that on your browser:
 	
 	http://localhost:8080/
