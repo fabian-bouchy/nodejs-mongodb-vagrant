@@ -18,7 +18,6 @@ Vagrant configuration with those components:
 * coffee-script
 * express
 * jade
-* mongoose
 
 
 ##How to use
@@ -29,9 +28,19 @@ Vagrant configuration with those components:
 
 	vagrant ssh
 
+	cd /vagrant/app
+
+Install local dependencies
+	
+	npm install
+
 ###Start the nodejs application
 
-	coffee /vagrant/app.coffee
+	npm start 
+
+or
+
+	coffee /vagrant/app/app.coffee
 
 ###Now check that on your browser
 	
